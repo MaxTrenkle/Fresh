@@ -1,0 +1,15 @@
+{
+  "name": "cardMax",
+  "version": "0.0.0",
+  "description": "Card style, time sensitive todo app",
+  "main": "server.js",
+  "author": "Max Trenkle",
+  "dependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.14.0",
+    "express": "^4.13.3",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.1.8",
+    "morgan": "^1.6.1"
+  }
+}

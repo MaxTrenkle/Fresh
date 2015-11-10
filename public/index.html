@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="fresh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh!</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body ng-controller="mainController">
+  <h1>Fresh <span>{{ todos.length }}</span></h1>
+    <div ng-repeat="todo in todos">
+      <input ng-click="deleteTodo(todo._id)" type="checkbox"> {{ todo.text }}
+    </div>
+  <form>
+    <input ng-model="formData.text" type="text" placeholder="Add an item!">
+    <button ng-click="createTodo()" type="submit">Add</button>
+  </form>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+  <script src="core.js"></script>
+</body>
+</html>
